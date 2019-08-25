@@ -23,6 +23,11 @@
 				{{ partialCached "social-icons.html" . }}
 			</div>
 			{{- end }}
+			{{- with .Site.Params.personal }}
+			<div id="home-personal">
+				{{ partialCached "personal-icons.html" . }}
+			</div>
+			{{- end }}
 			<nav id="home-nav" class="site-nav">
 				{{ partialCached "menu.html" . }}
 			</nav>
